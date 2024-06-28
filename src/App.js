@@ -44,7 +44,7 @@ function App() {
 
         }
         fetchWeatherData()
-    }, [searchCity])
+    }, [searchCity, cityInput])
 
 
     return (
