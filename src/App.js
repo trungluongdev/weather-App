@@ -22,7 +22,7 @@ function App() {
             if (!searchCity) return;
             setLoading(true)
             try {
-                const url = `${API.base}/weather?q=${cityInput}&APPID=${API.key}`
+                const url = `${API.base}/weather?q=${searchCity}&APPID=${API.key}`
                 const response = await fetch(url)
                 const data = await response.json()
                 if (response.ok) {
